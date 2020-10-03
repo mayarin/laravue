@@ -23,3 +23,8 @@ services:
       - 3306:3306
     volumes:
       - db-store:/var/lib/mysql
+
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
